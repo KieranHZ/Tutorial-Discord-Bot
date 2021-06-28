@@ -12,7 +12,7 @@ client = discord.Client()
 youtubers = config.getYouTubersList() if (config.getYouTubersNr() != 0) else sys.exit()
 if (config.getDiscordChannelNr() == 0): sys.exit()
 id = ''
-GOOGLE_API = config.getConnectionData()[0]
+GOOGLE_API = os.getenv("GOOGLE_API")()[0]
 pingEveryXMinutes = config.getPingTime()
 threads = []
 processes = []
