@@ -74,6 +74,3 @@ async def on_ready():
     asyncio.ensure_future(update())
 
 client.run(os.getenv("DISCORD_TOKEN"))
-
-if __name__ == '__main__':
-    main()
